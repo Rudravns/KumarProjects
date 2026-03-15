@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ballout - KumarProjects</title>
+
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/ballout.css">
+
+    <link rel="icon" type="image/png" href="images/index/icon.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<nav class="navbar">
+
+    <a href="index.html" class="nav-logo">
+        <img src="images/index/icon.png" alt="KumarProjects Logo">
+    </a>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle"> Platforms ▼</a>
+            <ul class="dropdown-content">
+                <li><a href="https://github.com/Rudravns">Github</a></li>
+                <li><a href="https://rudravns.itch.io/">Itch</a></li>
+                <li><a href="https://replit.com/@-THE-CODER-">Replit</a></li>
+                <li><a href="https://scratch.mit.edu/users/Darkgamerz10/">Scratch</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <a href="#" class="nav-projects-link">View Projects</a>
+
+</nav>
+
+
+<section class="content">
+
+<!-- Title -->
+
+<div class="card reveal ballout-title">
+
+    <h1>Ballout</h1>
+
+    <p>
+        A fast-paced physics-based ball game built with Python and Pygame.
+    </p>
+
+    <div class="project-links">
+        <a href="https://rudravns.itch.io/ballout" target="_blank">
+            🎮 Play / Download on Itch.io
+        </a>
+        <a href="https://github.com/Rudravns/Ballout" target="_blank">
+            📦 View Source on GitHub
+        </a>
+    </div>
+
+</div>
+
+
+<!-- Overview -->
+
+<div class="card reveal">
+
+<h2>About the Game</h2>
+
+<p>
+Ballout is a small fast-paced arcade-style physics soccar game where players control a ball
+and try to score while avoiding other players.
+</p>
+
+<p>
+The game focuses on responsive movement mechanics, collision detection,
+and quick reaction gameplay.
+</p>
+
+</div>
+
+<!--Creation-->
+<div class="card reveal">
+
+<h2>Why was this game created</h2>
+
+<p>
+This game was created for a coding challange and was based on a past soccar game with only controller support (it was very fun). It was made
+because I wanted a fun game that me and my sister could play together. This current game has bot and a little multiplayer support. 
+</p>
+
+</div>
+
+
+<!-- Gameplay -->
+
+<div class="card reveal">
+
+<h2>Gameplay</h2>
+
+<ul>
+<li>Control a moving ball</li>
+<li>Avoid opponents</li>
+<li>Maintain momentum and contoll of the ball</li>
+<li>Score as many goals as possible in 90 seconds</li>
+</ul>
+
+</div>
+
+
+<!-- Controls -->
+
+<div class="card reveal">
+
+<h2>Controls</h2>
+
+<ul>
+<li><strong>Move (WASD for players on right and arrow keys for players on left):</strong> WASD/Arrow Keys</li>
+<li><strong>Pause:</strong> ESC</li>
+</ul>
+
+</div>
+
+<!-- Project Structure -->
+<div class="card reveal">
+    <h2>Project Structure</h2>
+
+    <pre>
+    Ballout.py       → main game loop
+    Ballout_classes.py     → repeated non-game-goal classes/funcs
+    Ballout_entities.py      → ball and player classes
+    ballout_multiplayer.py    → multiplayer support (not fully implemented)
+    README.md         → game discription
+    Ballout.exe  → executable game file
+    ballout_assets/       → textures, sounds, fonts
+    </pre>
+
+</div>
+
+
+</section>
+
+
+<!-- Screenshot Gallery -->
+
+<div id="ballout-gallery">
+
+    <h2>Screenshots</h2>
+
+    <img src="images/ballout/1.png" alt="Gameplay Screenshot">
+    <img src="images/ballout/2.png" alt="Gameplay Screenshot">
+    <img src="images/ballout/3.png" alt="Gameplay Screenshot">
+    <img src="images/ballout/4.png" alt="Gameplay Screenshot">
+    <img src="images/ballout/5.png" alt="Gameplay Screenshot">
+    <img src="images/ballout/6.png" alt="Gameplay Screenshot">
+    <img src="images/ballout/7.png" alt="Gameplay Screenshot">
+
+
+</div>
+
+
+<!-- Sidebar (same as Froststep) -->
+
+<div id="sidebar">
+
+    <a href="#" class="closebtn">&times;</a>
+
+    <div class="sidebar-content">
+        <h2>My Projects</h2>
+
+        <a href="neural_network.html#Featured-Project">Neural Network</a>
+        <a href="chess.html#Featured-Project">Chess</a>
+        <a href="froststep.html#Featured-Project">Froststep</a>
+        <a href="ballout.html">Ballout</a>
+        <a href="heli-run.html">HELI RUN</a>
+    </div>
+
+</div>
+
+
+<footer id="contact">
+    <p>© 2026 KumarProjects — Built by Rudransh Kumar</p>
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

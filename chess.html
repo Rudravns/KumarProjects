@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chess Project - KumarProjects</title>
+
+    <!-- General site CSS -->
+    <link rel="stylesheet" href="css/components.css">
+    <!-- Chess-specific CSS -->
+    <link rel="stylesheet" href="css/chess.css">
+
+    <!--set the title img-->
+    <link rel="icon" type="image/png" href="images/index/icon.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Background animation -->
+<div id="particles"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="index.html" class="nav-logo">
+        <img src="images/index/icon.png" alt="KumarProjects Logo">
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle"> Platforms ▼</a>
+            <ul class="dropdown-content">
+                <li><a href="https://github.com/Rudravns">Github</a></li>
+                <li><a href="https://rudravns.itch.io/">Itch</a></li>
+                <li><a href="https://replit.com/@-THE-CODER-">Replit</a></li>
+                <li><a href="https://scratch.mit.edu/users/Darkgamerz10/">Scratch</a></li>
+            </ul>
+        </li>
+    </ul>
+    <a href="#" class="nav-projects-link">View Projects</a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<section class="content">
+
+    <!-- Project Overview -->
+    <div class="card reveal">
+        <h2>Chess Project Overview</h2>
+        <p>
+            This is a full chess game library combining Python for frontend visuals and C# for backend logic. 
+            Players can enjoy classic chess with move validation and interactive gameplay for two players.
+        </p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>Full chess rules with legal move validation</li>
+            <li>Two-player mode on a single device</li>
+            <li>Clean interface using Python graphics libraries</li>
+            <li>Backend logic in C# for fast computation</li>
+        </ul>
+    </div>
+
+    <!-- Timeline / Steps -->
+    <div class="card reveal">
+        <h2>Development Timeline</h2>
+
+        <div class="timeline-step">
+            <h3>Step 1: Planning & Design</h3>
+            <p>Outlined project requirements, designed the chessboard layout, and planned features.</p>
+        </div>
+
+        <div class="timeline-step">
+            <h3>Step 2: Start Frontend designing</h3>
+            <p>Implemented Chess board, added colors, and a debug menu</p>
+        </div>
+
+        <div class="timeline-step">
+            <h3>Step 3: Frontend UI and Datatypes in Python</h3>
+            <p>Created the interactive board and pieces, created many data types for better organization, and added MORE colors.</p>
+        </div>
+
+        <div class="timeline-step">
+            <h3>Step 4: Fixing Bugs and Folder Management</h3>
+            <p>Tested gameplay, fixed bugs, optimized the interface for smooth play, and organized folders for C#.</p>
+        </div>
+
+        <div class="timeline-step">
+            <h3>Step 5: Linking Backend to Frontend</h3>
+            <p>Created a Python code to specifically link python to c#.</p>
+        </div>
+
+        <div class="timeline-step">
+            <h3>Step 6: Created Backend Logic in C# and FEN loading/Saving</h3>
+            <p>Created c# code to get legal moves, check for checkmate, promotion, and more. Also added FEN loading and saving functionality.</p>
+        </div>
+
+        <div class="timeline-step">
+            <h3>Step 7: FEN Loading and Saving and Promotion</h3>
+            <p>Fixed many bugs, fully completed the saving and loading functionality of the game, and created promotion UI.</p>
+        </div>
+
+        <div class="timeline-step">
+            <h3>Step 8: PGN support and Finalizing</h3>
+            <p>Added PGN support for full game readibilty and finishing the project</p>
+        </div>
+
+        <div class="timeline-step">
+            <h3>Step 9: Backtracking and More Bugs</h3>
+            <p>Added Bug fixes and Backtracking support.</p>
+        </div>
+
+        <div class="timeline-step">
+            <h3>Step 10: Publishing </h3>
+            <p>Published on Github for everyone to see and use!</p>
+        </div>
+    </div>
+
+        <!-- FUTURE GOALS -->
+    <div class="card reveal">
+        <h2>Future Goals</h2>
+        <ul>
+            <li>Add online multiplayer support so players can compete over the internet.</li>
+            <li>Create a smarter AI opponent with adjustable difficulty levels.</li>
+            <li>Improve graphics and animations for a more polished user interface.</li>
+            <li>Build a replay and analysis system to review games and improve strategies.</li>
+        </ul>
+    </div>
+
+    <!-- WHERE TO FIND IT -->
+    <div class="card reveal">
+        <h2>Where to Find It</h2>
+        <p>You can explore and download the Chess Project from my GitHub repository:</p>
+        <ul>
+            <li><a href="https://github.com/Rudravns/Chess" target="_blank">Chess Project on GitHub</a></li>
+            <li>Instructions for running the Python frontend and C# backend are included in the repository README.</li>
+        </ul>
+    </div>
+
+</section>
+
+<!-- Side Gallery for Finished Game Screenshots -->
+<div id="chess-gallery">
+    <h2>Finished Game Screenshots</h2>
+    <img src="images/chess/1.png" alt="Chess Screenshot 1">
+    <img src="images/chess/2.png" alt="Chess Screenshot 2">
+    <img src="images/chess/3.png" alt="Chess Screenshot 3">
+    <img src="images/chess/4.png" alt="Chess Screenshot 4">
+    <img src="images/chess/5.png" alt="Chess Screenshot 5">
+</div>
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+    <a href="#" class="closebtn">&times;</a>
+    <div class="sidebar-content">
+        <h2>My Projects</h2>
+        <a href="neural_network.html#Featured-Project">Neural Network</a>
+        <a href="chess.html#Featured-Project">Chess</a>
+        <a href="froststep.html#Featured-Project">Froststep</a>
+        <a href="ballout.html">Ballout</a>
+        <a href="heli-run.html">HELI RUN</a>
+    </div>
+</div>
+
+<footer id="contact">
+    <p>© 2026 KumarProjects — Built by Rudransh Kumar</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

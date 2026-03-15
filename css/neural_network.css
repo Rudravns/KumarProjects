@@ -1,0 +1,102 @@
+/* Neural Network-specific card enhancements */
+.card {
+    border-left: 4px solid #ebdcca;
+    padding: 30px;
+}
+
+/* Lists inside cards */
+.card ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* Highlight card on hover */
+.card:hover {
+    border-left-color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+/* Content spacing for NN page */
+.content {
+    max-width: 950px;
+    margin-left: 60px; /* Push content away from left edge */
+    margin-right: 340px; /* Make room for side gallery */
+    padding-top: 100px; /* Extra padding for fixed navbar */
+}
+
+/* Timeline steps - text only */
+.timeline-step {
+    margin-top: 20px;
+    padding: 15px;
+    background: #12142c;
+    border-left: 4px solid #ebdcca;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.timeline-step h3 {
+    margin-top: 0;
+    font-family: 'Iosevka Charon Mono', monospace;
+    color: #f0dca0;
+}
+
+.timeline-step p {
+    line-height: 1.5;
+    margin: 8px 0 12px 0;
+}
+
+/* Side gallery for NN screenshots */
+#nn-gallery {
+    position: fixed;
+    top: 100px; /* below navbar */
+    right: 40px;
+    width: 380px; /* gallery width */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: calc(100vh - 140px); /* leave space for navbar/footer */
+    overflow-y: auto;
+    padding-right: 10px;
+    background: rgba(15,19,40,0.8); /* subtle background to separate from main content */
+}
+
+/* Gallery title */
+#nn-gallery h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #ebdcca;
+    margin-bottom: 10px;
+}
+
+/* Images in the gallery */
+#nn-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+#nn-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Custom scrollbar for gallery */
+#nn-gallery::-webkit-scrollbar {
+    width: 8px;
+}
+
+#nn-gallery::-webkit-scrollbar-track {
+    background: #0f1328; /* match card background */
+}
+
+#nn-gallery::-webkit-scrollbar-thumb {
+    background-color: #ebdcca;
+    border-radius: 4px;
+}

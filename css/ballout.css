@@ -1,0 +1,193 @@
+/* Ballout-specific card enhancements (Arcade energy theme) */
+
+.card {
+    border-left: 4px solid #ff8c42; /* Arcade Orange */
+    padding: 30px;
+}
+
+/* Lists inside cards */
+
+.card ul {
+    padding-left: 20px;
+    list-style: disc;
+    color: #ddd;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* Hover effect */
+
+.card:hover {
+    border-left-color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(255, 140, 66, 0.25); /* Orange glow */
+}
+
+
+/* Title card */
+
+.ballout-title {
+    text-align: center;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 10px !important;
+}
+
+.ballout-title h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.ballout-title p {
+    font-style: italic;
+    color: #aaa;
+}
+
+
+/* Download buttons */
+
+.project-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 18px;
+
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+
+    background: #ff8c42;
+    color: white;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-links a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255,140,66,0.35);
+}
+
+
+/* Content spacing */
+
+.content {
+    max-width: 950px;
+    margin-left: 60px;
+    margin-right: 340px;
+    padding-top: 100px;
+}
+
+
+/* Timeline blocks */
+
+.timeline-step {
+    margin-top: 20px;
+    padding: 15px;
+
+    background: rgba(30, 20, 10, 0.7);
+
+    border-left: 4px solid #ff8c42;
+    border-radius: 8px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.timeline-step h3 {
+    margin-top: 0;
+    font-family: 'Iosevka Charon Mono', monospace;
+    color: #ffffff;
+}
+
+.timeline-step p {
+    line-height: 1.5;
+    margin: 8px 0 12px 0;
+    color: #ccc;
+}
+
+
+/* Screenshot side gallery */
+
+#ballout-gallery {
+
+    position: fixed;
+
+    top: 100px;
+    right: 40px;
+
+    width: 380px;
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+
+    padding: 20px;
+
+    background: rgba(20, 15, 10, 0.9);
+
+    border: 1px solid rgba(255,140,66,0.15);
+}
+
+#ballout-gallery h2 {
+
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+
+    color: #ff8c42;
+
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#ballout-gallery img {
+
+    width: 100%;
+
+    border-radius: 8px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+
+    transition: transform 0.3s ease, border 0.3s ease;
+
+    border: 1px solid transparent;
+}
+
+#ballout-gallery img:hover {
+
+    transform: scale(1.03);
+    border-color: #ff8c42;
+}
+
+
+/* Custom scrollbar */
+
+#ballout-gallery::-webkit-scrollbar {
+    width: 6px;
+}
+
+#ballout-gallery::-webkit-scrollbar-track {
+    background: #0a1018;
+}
+
+#ballout-gallery::-webkit-scrollbar-thumb {
+    background-color: #ff8c42;
+    border-radius: 4px;
+}
+
+
+/* Sidebar active project */
+
+.active-project {
+    color: #fff !important;
+    text-shadow: 0 0 10px #ff8c42;
+}

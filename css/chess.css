@@ -1,0 +1,96 @@
+/* Chess-specific card enhancements */
+.card {
+    border-left: 4px solid #ebdcca;
+    padding: 30px;
+}
+
+/* Chess project list styles (if needed later) */
+.card ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* Optional: Highlight chess card on hover */
+.card:hover {
+    border-left-color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+/* Specific content spacing for chess page */
+.content {
+    /* Pushed to the left to make room for the side gallery */
+    max-width: 950px;
+    margin-left: 60px;
+    margin-right: 340px; /* Space for the gallery */
+    padding-top: 100px; /* extra padding for fixed navbar */
+}
+
+/* Timeline steps - text only */
+.timeline-step {
+    margin-top: 20px;
+    padding: 15px;
+    background: #12142c;
+    border-left: 4px solid #ebdcca;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.timeline-step h3 {
+    margin-top: 0;
+    font-family: 'Iosevka Charon Mono', monospace;
+    color: #f0dca0;
+}
+
+.timeline-step p {
+    line-height: 1.5;
+    margin: 8px 0 12px 0;
+}
+
+/* Side gallery */
+#chess-gallery {
+    position: fixed;
+    top: 100px; /* below navbar */
+    right: 40px;
+    width: 380px; /* bigger images*/
+
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: calc(100vh - 140px); /* Allow scrolling */
+    overflow-y: auto; /* Show scrollbar if content overflows */
+    padding-right: 10px; /* Space for the scrollbar */
+}
+
+#chess-gallery h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #ebdcca;
+    margin-bottom: 10px;
+}
+
+#chess-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* Custom Scrollbar for Gallery */
+#chess-gallery::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chess-gallery::-webkit-scrollbar-track {
+    background: #0f1328; /* Match card background */
+}
+
+#chess-gallery::-webkit-scrollbar-thumb {
+    background-color: #ebdcca;
+    border-radius: 4px;
+}

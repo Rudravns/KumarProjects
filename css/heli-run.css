@@ -1,0 +1,177 @@
+/* HELI RUN Theme (Neon helicopter / radar style) */
+
+.card {
+    border-left: 4px solid #39ff14; /* Neon Green */
+    padding: 30px;
+}
+
+
+/* Lists inside cards */
+
+.card ul {
+    padding-left: 20px;
+    list-style: disc;
+    color: #ddd;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+
+/* Hover effect */
+
+.card:hover {
+    border-left-color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(57,255,20,0.25); /* green glow */
+}
+
+
+/* Title card */
+
+.heli-title {
+    text-align: center;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 10px !important;
+}
+
+.heli-title h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.heli-title p {
+    font-style: italic;
+    color: #aaa;
+}
+
+
+/* Download buttons */
+
+.project-links a {
+
+    display: inline-block;
+
+    margin: 10px;
+    padding: 10px 18px;
+
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+
+    background: #39ff14;
+    color: black;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.project-links a:hover {
+
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(57,255,20,0.4);
+
+}
+
+
+/* Content spacing */
+
+.content {
+    max-width: 950px;
+    margin-left: 60px;
+    margin-right: 340px;
+    padding-top: 100px;
+}
+
+
+/* Screenshot gallery */
+
+#heli-gallery {
+
+    position: fixed;
+
+    top: 100px;
+    right: 40px;
+
+    width: 380px;
+
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+
+    padding: 20px;
+
+    background: rgba(10,20,10,0.9);
+
+    border: 1px solid rgba(57,255,20,0.15);
+
+}
+
+#heli-gallery h2 {
+
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+
+    color: #39ff14;
+
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+#heli-gallery img {
+
+    width: 100%;
+
+    border-radius: 8px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+
+    transition: transform 0.3s ease, border 0.3s ease;
+
+    border: 1px solid transparent;
+
+}
+
+#heli-gallery img:hover {
+
+    transform: scale(1.03);
+    border-color: #39ff14;
+
+}
+
+
+/* Custom scrollbar */
+
+#heli-gallery::-webkit-scrollbar {
+    width: 6px;
+}
+
+#heli-gallery::-webkit-scrollbar-track {
+    background: #0a1018;
+}
+
+#heli-gallery::-webkit-scrollbar-thumb {
+    background-color: #39ff14;
+    border-radius: 4px;
+}
+
+
+/* Sidebar active project */
+
+.active-project {
+    color: #fff !important;
+    text-shadow: 0 0 10px #39ff14;
+}

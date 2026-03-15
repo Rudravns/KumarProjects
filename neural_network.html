@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Neural Network Basics - KumarProjects</title>
+
+    <!-- General site CSS -->
+    <link rel="stylesheet" href="css/components.css">
+    <!-- Neural Network specific CSS -->
+    <link rel="stylesheet" href="css/neural_network.css">
+
+    <!--set the title img-->
+    <link rel="icon" type="image/png" href="images/index/icon.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Background animation -->
+<div id="particles"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="index.html" class="nav-logo">
+        <img src="images/index/icon.png" alt="KumarProjects Logo">
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle"> Platforms ▼</a>
+            <ul class="dropdown-content">
+                <li><a href="https://github.com/Rudravns">Github</a></li>
+                <li><a href="https://rudravns.itch.io/">Itch</a></li>
+                <li><a href="https://replit.com/@-THE-CODER-">Replit</a></li>
+                <li><a href="https://scratch.mit.edu/users/Darkgamerz10/">Scratch</a></li>
+            </ul>
+        </li>
+    </ul>
+    <a href="#" class="nav-projects-link">View Projects</a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<section class="content">
+
+    <!-- Project Overview -->
+    <div class="card reveal">
+        <h2>Neural Network Basics</h2>
+        <p>
+            A fully-implemented neural network from scratch that recognizes handwritten digits (0-9) from the MNIST dataset,
+            with an interactive Pygame visualization interface.
+        </p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>Custom Neural Network implementation using NumPy</li>
+            <li>Multi-layer perceptron with ReLU hidden layers and Softmax output</li>
+            <li>Interactive Pygame interface for drawing digits</li>
+            <li>MNIST dataset support (training & testing)</li>
+            <li>Model persistence with JSON save/load</li>
+        </ul>
+    </div>
+
+    <!-- Project Structure -->
+    <div class="card reveal">
+        <h2>Project Structure</h2>
+        <pre>
+Machine-Learning/
+├── Main.py        # Pygame interface
+├── network.py     # Neural network implementation
+├── load_data.py   # MNIST loader
+├── helper.py      # Helper functions and save/load
+├── model_data.json
+└── data/          # MNIST dataset
+        </pre>
+    </div>
+
+    <!-- Installation & Usage -->
+    <div class="card reveal">
+        <h2>Installation & Usage</h2>
+        <ol>
+            <li>Clone repository: <code>git clone https://github.com/Rudravns/Machine-Learning.git</code></li>
+            <li>Install dependencies: <code>pip install numpy scipy pygame matplotlib</code></li>
+            <li>Download MNIST dataset into <code>data/</code></li>
+            <li>Run application: <code>python Main.py</code></li>
+        </ol>
+        <p>Command-line options:</p>
+        <ul>
+            <li><code>--learning</code> Train a new model from scratch</li>
+            <li><code>--test_acc</code> Evaluate test accuracy</li>
+            <li><code>--times N</code> Repeat training N times</li>
+        </ul>
+        <p> It will take aprox. 6-7 mins to train this Model</p>
+    </div>
+
+    <!-- Development Timeline -->
+    <div class="card reveal">
+        <h2>Development Timeline</h2>
+        <div class="timeline-step">
+            <h3>Step 1: Planning</h3>
+            <p>Planned architecture, input/output layers, and GUI interaction.</p>
+        </div>
+        <div class="timeline-step">
+            <h3>Step 2: Implement Neural Network Core</h3>
+            <p>Built multi-layer perceptron and activation functions.</p>
+        </div>
+        <div class="timeline-step">
+            <h3>Step 3: Backpropagation & Training</h3>
+            <p>Implemented learning using forward/backward propagation with MNIST dataset.</p>
+        </div>
+        <div class="timeline-step">
+            <h3>Step 4: Interactive Visualization</h3>
+            <p>Created Pygame interface to draw digits and see real-time predictions.</p>
+        </div>
+        <div class="timeline-step">
+            <h3>Step 5: Model Persistence</h3>
+            <p>Added JSON save/load for trained weights.</p>
+        </div>
+        <div class="timeline-step">
+            <h3>Step 6: Final Testing & Publishing</h3>
+            <p>Tested predictions, debugged, and published on GitHub.</p>
+        </div>
+    </div>
+
+    <!-- Future Goals -->
+    <div class="card reveal">
+        <h2>Future Goals</h2>
+        <ul>
+            <li>Implement Convolutional Neural Networks (CNNs) for better accuracy</li>
+            <li>Integrate data augmentation techniques</li>
+            <li>Web-based interface for drawing digits</li>
+            <li>Additional optimization algorithms like Adam or RMSProp</li>
+            <li>Model export to ONNX or other frameworks</li>
+        </ul>
+    </div>
+
+    <!-- Where to Find -->
+    <div class="card reveal">
+        <h2>Where to Find</h2>
+        <p>
+            Right now Replit has the fully working 0-9 working neural_network so explore and download the project on replit: 
+            <a href="https://replit.com/@-THE-CODER-/Neural-network-1" target="_blank">Neural Network Basics Replit</a>
+            <br>
+            This is being updated with letters support so you can check that right here: 
+            <a href="https://github.com/Rudravns/Neural-Network-Basics" target="_blank">Neural Network Basics Repository</a>
+        </p>
+    </div>
+
+</section>
+
+<!-- Side Gallery for finished screenshots (optional) -->
+<div id="nn-gallery">
+    <h2>Finished Screenshots</h2>
+    <img src="images/NN/None.png" alt="NN Screenshot ">
+    <img src="images/NN/0.png" alt="NN Screenshot 0">
+    <img src="images/NN/1.png" alt="NN Screenshot 1">
+    <img src="images/NN/2.png" alt="NN Screenshot 2">
+    <img src="images/NN/3.png" alt="NN Screenshot 3">
+    <img src="images/NN/4.png" alt="NN Screenshot 4">
+    <img src="images/NN/5.png" alt="NN Screenshot 5">
+    <img src="images/NN/6.png" alt="NN Screenshot 6">
+    <img src="images/NN/7.png" alt="NN Screenshot 7">
+    <img src="images/NN/8.png" alt="NN Screenshot 8">
+    <img src="images/NN/9.png" alt="NN Screenshot 9">
+</div>
+
+<!-- Sidebar -->
+<div id="sidebar">
+    <a href="#" class="closebtn">&times;</a>
+    <div class="sidebar-content">
+        <h2>My Projects</h2>
+
+        <a href="neural_network.html#Featured-Project">Neural Network</a>
+        <a href="chess.html#Featured-Project">Chess</a>
+        <a href="froststep.html#Featured-Project">Froststep</a>
+        <a href="ballout.html">Ballout</a>
+        <a href="heli-run.html">HELI RUN</a>
+    </div>
+</div>
+
+<footer id="contact">
+    <p>© 2026 KumarProjects — Built by Rudransh Kumar</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

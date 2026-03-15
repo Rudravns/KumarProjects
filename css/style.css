@@ -1,0 +1,87 @@
+#dropdown-toggle {
+    font-size: 60px;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+text-align:center;
+padding-top:160px;
+padding-bottom:80px;
+animation:fadeUp 1s ease;
+}
+
+.hero-title{
+font-family:'Iosevka Charon Mono',monospace;
+font-size:60px;
+color:#ebdcca;
+margin-bottom:10px;
+}
+
+.hero-sub{
+font-size:20px;
+opacity:0.8;
+}
+
+
+/* SCROLLING LANGUAGES */
+
+.scroll-container{
+overflow:hidden;
+margin-top:30px;
+mask-image:linear-gradient(to right,transparent,black 10%,black 90%,transparent);
+}
+
+.scroll-content{
+display:flex;
+width:max-content;
+animation:scroll-left 25s linear infinite;
+}
+
+.intro_img{
+height:180px;
+margin-right:40px;
+}
+
+@keyframes scroll-left{
+0%{transform:translateX(0)}
+100%{transform:translateX(-50%)}
+}
+
+/* FEATURED PROJECTS GRID */
+#Featured-Project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;            /* space between cards */
+    padding: 40px 20px;   /* space around the whole section */
+    margin-top: 50px;
+}
+
+#Featured-Project h2{
+    grid-column: 1 / -1;
+}
+#Featured-Project-text{
+    grid-column: 1 / -1;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ebdcca;
+    font-family: 'Playfair Display', serif;
+}
+
+#Featured-Project .card {
+    background-color: #121212;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+#Featured-Project .card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}

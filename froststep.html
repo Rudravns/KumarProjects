@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Froststep - KumarProjects</title>
+
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/froststep.css">
+
+    <link rel="icon" type="image/png" href="images/index/icon.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<nav class="navbar">
+
+    <a href="index.html" class="nav-logo">
+        <img src="images/index/icon.png" alt="KumarProjects Logo">
+    </a>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle"> Platforms ▼</a>
+            <ul class="dropdown-content">
+                <li><a href="https://github.com/Rudravns">Github</a></li>
+                <li><a href="https://rudravns.itch.io/">Itch</a></li>
+                <li><a href="https://replit.com/@-THE-CODER-">Replit</a></li>
+                <li><a href="https://scratch.mit.edu/users/Darkgamerz10/">Scratch</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <a href="#" class="nav-projects-link">View Projects</a>
+
+</nav>
+
+<section class="content">
+
+    <!-- Title -->
+    <div class="card reveal froststep-title">
+        <h1>Froststep</h1>
+        <p>A top-down survival game built with <strong>Pygame</strong>.</p>
+
+        <p class="jam-note">
+            Created for the <strong>Pygame Community Winter Jam 2026</strong>
+        </p>
+
+        <div class="project-links">
+            <a href="https://rudravns.itch.io/froststep" target="_blank">🎮 Play / Download on Itch.io</a>
+            <a href="https://github.com/Rudravns/Froststep/" target="_blank">📦 View Source on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="card reveal">
+        <h2>What is Froststep?</h2>
+
+        <p>
+            Froststep is a top-down survival game where the player explores a frozen world,
+            gathers resources, and fights to keep a central beacon alive.
+        </p>
+
+        <p>
+            The environment is covered in darkness and freezing fog. Your warmth slowly
+            drains as time passes, forcing you to explore the world, harvest resources,
+            and return them to the beacon before the cold overtakes you.
+        </p>
+    </div>
+
+    <!-- Gameplay -->
+    <div class="card reveal">
+        <h2>Gameplay Loop</h2>
+
+        <ul>
+            <li>Gather <strong>wood</strong> and <strong>membrane</strong> from trees.</li>
+            <li>Carry resources in a <strong>3-slot inventory</strong>.</li>
+            <li>Return resources to the <strong>Beacon</strong> to restore warmth.</li>
+            <li>Survive roaming enemies such as <strong>spiders</strong>.</li>
+            <li>Manage your <strong>warmth meter</strong> and <strong>time left</strong>.</li>
+        </ul>
+
+        <p>
+            The longer you survive and the more fuel you deposit, the stronger the
+            beacon becomes — expanding its light radius and pushing back the darkness.
+        </p>
+    </div>
+
+    <!-- Controls -->
+    <div class="card reveal">
+        <h2>Controls</h2>
+
+        <ul>
+            <li><strong>Move:</strong> WASD / Arrow Keys</li>
+            <li><strong>Interact / Pick up / Deposit:</strong> E</li>
+            <li><strong>Drop item:</strong> Q</li>
+            <li><strong>Switch inventory slot:</strong> Mouse wheel</li>
+            <li><strong>Toggle fullscreen:</strong> F11</li>
+        </ul>
+
+        <h3 style="margin-top:15px;">Debug Keys</h3>
+
+        <ul>
+            <li>F1 – Toggle UI debug overlay</li>
+            <li>F2 – Toggle hitbox debug</li>
+            <li>F3 – Toggle console debug output</li>
+        </ul>
+    </div>
+
+    <!-- Enemies -->
+    <div class="card reveal">
+        <h2>Enemies & AI</h2>
+
+        <p>
+            The frozen forest is not empty. Spiders wander the world using
+            a simple state-based AI system:
+        </p>
+
+        <ul>
+            <li><strong>Wander:</strong> Random roaming around the map</li>
+            <li><strong>Chase:</strong> Lock onto the player when detected</li>
+            <li><strong>Attack:</strong> Strike when within range</li>
+        </ul>
+
+        <p>
+            This forces players to balance exploration with survival.
+        </p>
+    </div>
+
+    <!-- Technical -->
+    <div class="card reveal">
+        <h2>Technical Challenges</h2>
+
+        <p>
+            Froststep renders a large <strong>5000×5000 world</strong> with hundreds of
+            objects while maintaining smooth gameplay.
+        </p>
+
+        <ul>
+            <li>Optimized collision detection using Pygame Rect lists</li>
+            <li>Dynamic fog-of-war using alpha surfaces</li>
+            <li>Resolution scaling for fullscreen and windowed modes</li>
+            <li>Efficient sprite and asset loading utilities</li>
+        </ul>
+    </div>
+
+    <!-- Project Structure -->
+    <div class="card reveal">
+        <h2>Project Structure</h2>
+
+        <pre>
+        main.py       → main game loop
+        player.py     → player logic
+        enemy.py      → spider AI
+        objects.py    → trees and world objects
+        ui.py         → UI system
+        utilities.py  → helper utilities
+        Assets/       → textures, sounds, fonts
+        </pre>
+
+    </div>
+
+    <!-- Download -->
+    <div class="card reveal">
+        <h2>Play or Download</h2>
+
+        <p>
+            You can download and play Froststep directly from my Itch.io page.
+        </p>
+
+        <p>
+            <a href="https://rudravns.itch.io/froststep" target="_blank">
+                🎮 Download Froststep on Itch.io
+            </a>
+        </p>
+
+        <p>
+            Or explore the full source code on GitHub:
+        </p>
+
+        <p>
+            <a href="https://github.com/Rudravns/Froststep/" target="_blank">
+                📦 Froststep Source Code
+            </a>
+        </p>
+    </div>
+
+</section>
+
+<!-- Screenshot Gallery -->
+
+<div id="froststep-gallery">
+
+    <h2>Screenshots</h2>
+
+    <img src="images/froststep/1.png" alt="Menu">
+    <img src="images/froststep/2.png" alt="Gameplay">
+    <img src="images/froststep/3.png" alt="Combat">
+    <img src="images/froststep/4.png" alt="Beacon">
+    <img src="images/froststep/5.png" alt="Win">
+
+</div>
+
+<!-- Sidebar -->
+
+<div id="sidebar">
+
+    <a href="#" class="closebtn">&times;</a>
+
+    <div class="sidebar-content">
+        <h2>My Projects</h2>        
+        <a href="neural_network.html#Featured-Project">Neural Network</a>
+        <a href="chess.html#Featured-Project">Chess</a>
+        <a href="froststep.html#Featured-Project">Froststep</a>
+        <a href="ballout.html">Ballout</a>
+        <a href="heli-run.html">HELI RUN</a>
+
+    </div>
+
+</div>
+
+<footer id="contact">
+    <p>© 2026 KumarProjects — Built by Rudransh Kumar</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
