@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Raycaster - KumarProjects</title>
+
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/raycaster1.css">
+
+<link rel="icon" type="image/png" href="images/index/icon.png">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<nav class="navbar">
+
+<a href="index.html" class="nav-logo">
+<img src="images/index/icon.png" alt="KumarProjects Logo">
+</a>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+
+<li class="dropdown">
+<a href="#" class="dropdown-toggle">Platforms ▼</a>
+<ul class="dropdown-content">
+<li><a href="https://github.com/Rudravns">Github</a></li>
+<li><a href="https://rudravns.itch.io/">Itch</a></li>
+<li><a href="https://replit.com/@-THE-CODER-">Replit</a></li>
+<li><a href="https://scratch.mit.edu/users/Darkgamerz10/">Scratch</a></li>
+</ul>
+</li>
+</ul>
+
+<a href="#" class="nav-projects-link">View Projects</a>
+
+</nav>
+
+
+<section class="content">
+
+<!-- Title -->
+
+<div class="card reveal raycaster-title">
+
+<h1>Raycaster</h1>
+
+<p>
+A classic <strong>raycasting renderer</strong> built with Python and Pygame.
+</p>
+
+<div class="project-links">
+
+<a href="https://github.com/Rudravns/Raycaster" target="_blank">
+📦 View Source on GitHub
+</a>
+
+</div>
+
+</div>
+
+
+<!-- About -->
+
+<div class="card reveal">
+
+<h2>What is Raycasting?</h2>
+
+<p>
+Raycasting is a rendering technique used by early 3D games to simulate
+a three-dimensional world from a 2D map. Instead of rendering full 3D
+geometry, the engine casts rays outward from the player's view to
+calculate wall distances.
+</p>
+
+<p>
+This project recreates that technique using Python and Pygame to better
+understand how classic game engines worked.
+</p>
+
+</div>
+
+
+<!-- Features -->
+
+<div class="card reveal">
+
+<h2>Engine Features</h2>
+
+<ul>
+<li>Real-time raycasting renderer</li>
+<li>Grid-based world map</li>
+<li>Wall collision detection</li>
+<li>Player movement and camera rotation</li>
+<li>Distance-based wall scaling</li>
+</ul>
+
+</div>
+
+
+<!-- Controls -->
+
+<div class="card reveal">
+
+<h2>Controls</h2>
+
+<ul>
+<li><strong>W / Up Arrow</strong> — Move Forward</li>
+<li><strong>S / Down Arrow</strong> — Move Backward</li>
+<li><strong>A</strong> — Rotate Left</li>
+<li><strong>D</strong> — Rotate Right</li>
+<li><strong>ESC</strong> — Exit</li>
+</ul>
+
+</div>
+
+
+<!-- Technical -->
+
+<div class="card reveal">
+
+<h2>Technical Details</h2>
+
+<ul>
+<li>Python + Pygame rendering</li>
+<li>DDA raycasting algorithm</li>
+<li>2D grid world map</li>
+<li>Efficient collision system</li>
+</ul>
+
+</div>
+
+
+<!-- Project Structure -->
+
+<div class="card reveal">
+
+<h2>Project Structure</h2>
+
+<pre>
+main.py      → main loop
+player.py    → player movement
+raycaster.py → raycasting engine
+map.py       → world map
+</pre>
+
+</div>
+
+</section>
+
+
+<!-- Screenshot Gallery -->
+
+<div id="raycast-gallery">
+
+<h2>Screenshots</h2>
+
+<img src="images/raycaster/1.png">
+<img src="images/raycaster/2.png">
+<img src="images/raycaster/3.png">
+<img src="images/raycaster/4.png">
+
+</div>
+
+
+<!-- Sidebar -->
+
+<div id="sidebar">
+
+<a href="#" class="closebtn">&times;</a>
+
+<div class="sidebar-content">
+
+<h2>My Projects</h2>
+
+<a href="neural_network.html#Featured-Project">Neural Network</a>
+<a href="chess.html#Featured-Project">Chess</a>
+<a href="froststep.html#Featured-Project">Froststep</a>
+<a href="ballout.html">Ballout</a>
+<a href="heli-run.html">HELI RUN</a>
+<a href="raycaster.html" class="active-project">Raycaster-Basics</a>
+
+</div>
+
+</div>
+
+
+<footer id="contact">
+<p>© 2026 KumarProjects — Built by Rudransh Kumar</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

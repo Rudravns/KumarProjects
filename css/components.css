@@ -1,6 +1,7 @@
 /* GENERAL */
 body{
-background:#070a18;
+background: radial-gradient(circle at 50% 0%, #1c223f, #070a18); /* Deep gradient background */
+background-attachment: fixed;
 margin:0;
 font-family:'Playfair Display',serif;
 color:#eeeeee;
@@ -47,10 +48,28 @@ color:#ebdcca;
 font-family:'Iosevka Charon Mono',monospace;
 font-size: 18px;
 transition:0.3s;
+position: relative;
+}
+
+/* Sliding underline animation */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #ebdcca;
+    transition: width 0.3s ease;
 }
 
 .nav-links a:hover{
 color:white;
+width: 100%;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .nav-projects-link {
@@ -63,10 +82,16 @@ color:white;
     font-family: 'Iosevka Charon Mono', monospace;
     font-size: 18px;
     transition: 0.3s;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 .nav-projects-link:hover {
     color: white;
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(235, 220, 202, 0.4);
+    box-shadow: 0 0 15px rgba(235, 220, 202, 0.1);
 }
 
 /* DROPDOWN */
@@ -114,11 +139,39 @@ padding:25px;
 border-radius:10px;
 box-shadow:0 10px 25px rgba(0,0,0,0.3);
 transition:0.3s;
+position: relative;
+overflow: hidden; /* Contains the spotlight glow */
 }
 
 .card:hover{
 transform:translateY(-4px);
 box-shadow:0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* Spotlight Glow Effect */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(
+        800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+        rgba(255, 255, 255, 0.06),
+        transparent 40%
+    );
+    z-index: 1;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+/* Ensure text stays above the glow */
+.card > * {
+    position: relative;
+    z-index: 2;
 }
 
 .card h2{
