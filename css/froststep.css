@@ -131,3 +131,26 @@
     color: #fff !important;
     text-shadow: 0 0 10px #a0d8f0;
 }
+
+/* Responsive Layout Adjustments */
+@media screen and (max-width: 1200px) {
+    .content {
+        margin-right: 60px; /* Remove the wide right margin reserved for fixed gallery */
+        max-width: none;
+    }
+
+    #froststep-gallery {
+        position: static; /* Switch from fixed to static flow so it appears at bottom */
+        width: auto;
+        max-height: none;
+        margin: 40px 60px;
+        overflow-y: visible;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content, #froststep-gallery {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
