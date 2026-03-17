@@ -1,10 +1,13 @@
-/* Froststep-specific card enhancements (Blue/Frost theme) */
+/* HELI RUN Theme (Neon helicopter / radar style) */
+
 .card {
-    border-left: 4px solid #a0d8f0; /* Frost Blue */
+    border-left: 4px solid #61371F; /* Neon Green */
     padding: 30px;
 }
 
+
 /* Lists inside cards */
+
 .card ul {
     padding-left: 20px;
     list-style: disc;
@@ -16,15 +19,19 @@
     line-height: 1.4;
 }
 
-/* Highlight card on hover */
+
+/* Hover effect */
+
 .card:hover {
     border-left-color: #ffffff;
     transform: translateY(-5px);
-    box-shadow: 0 25px 50px rgba(160, 216, 240, 0.2); /* Subtle blue glow */
+    box-shadow: 0 25px 50px rgba(131, 5, 5, 0.25); /* green glow */
 }
 
-/* Title Card specific overrides */
-.froststep-title {
+
+/* Title card */
+
+.minecraft-title {
     text-align: center;
     background: transparent !important;
     box-shadow: none !important;
@@ -32,18 +39,21 @@
     padding: 10px !important;
 }
 
-.froststep-title h1 {
+.minecraft-title h1 {
     font-size: 3em;
     color: #fff;
     margin-bottom: 10px;
     font-family: 'Playfair Display', serif;
 }
 
-.froststep-title p {
+.minecraft-title p {
     font-style: italic;
     color: #aaa;
 }
-/* Project links*/
+
+
+/* Download buttons */
+
 .project-links a {
 
     display: inline-block;
@@ -55,7 +65,7 @@
     text-decoration: none;
     font-weight: 600;
 
-    background: #0434b8;
+    background: #61371F;
     color: black;
 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -65,13 +75,13 @@
 .project-links a:hover {
 
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(20, 43, 255, 0.4);
+    box-shadow: 0 10px 25px rgba(139, 9, 9, 0.4);
 
 }
 
 
-
 /* Content spacing */
+
 .content {
     max-width: 950px;
     margin-left: 60px;
@@ -79,84 +89,91 @@
     padding-top: 100px;
 }
 
-/* Timeline steps - themed for Froststep */
-.timeline-step {
-    margin-top: 20px;
-    padding: 15px;
-    background: rgba(10, 25, 45, 0.7); /* Deep cold blue */
-    border-left: 4px solid #a0d8f0;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
 
-.timeline-step h3 {
-    margin-top: 0;
-    font-family: 'Iosevka Charon Mono', monospace;
-    color: #ffffff;
-}
+/* Screenshot gallery */
 
-.timeline-step p {
-    line-height: 1.5;
-    margin: 8px 0 12px 0;
-    color: #ccc;
-}
+#minecraft-gallery {
 
-/* Side gallery for Froststep */
-#froststep-gallery {
     position: fixed;
+
     top: 100px;
     right: 40px;
+
     width: 380px;
+
     border-radius: 8px;
+
     display: flex;
     flex-direction: column;
+
     gap: 20px;
+
     max-height: calc(100vh - 140px);
     overflow-y: auto;
+
     padding: 20px;
-    background: rgba(15, 25, 40, 0.9); /* Dark blue tint */
-    border: 1px solid rgba(160, 216, 240, 0.1);
+
+    background: rgba(20, 10, 10, 0.9);
+
+    border: 1px solid rgba(255, 20, 20, 0.15);
+
 }
 
-#froststep-gallery h2 {
+#minecraft-gallery h2 {
+
     font-family: 'Playfair Display', serif;
     font-size: 18px;
-    color: #a0d8f0;
+
+    color: #61371F;
+
     margin-bottom: 10px;
     text-align: center;
+
 }
 
-#froststep-gallery img {
+#minecraft-gallery img {
+
     width: 100%;
+
     border-radius: 8px;
+
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+
     transition: transform 0.3s ease, border 0.3s ease;
+
     border: 1px solid transparent;
+
 }
 
-#froststep-gallery img:hover {
+#minecraft-gallery img:hover {
+
     transform: scale(1.03);
-    border-color: #a0d8f0;
+    border-color: #61371F;
+
 }
+
 
 /* Custom scrollbar */
-#froststep-gallery::-webkit-scrollbar {
+
+#minecraft-gallery::-webkit-scrollbar {
     width: 6px;
 }
 
-#froststep-gallery::-webkit-scrollbar-track {
-    background: #0a1018;
+#minecraft-gallery::-webkit-scrollbar-track {
+    background: #180a0a;
 }
 
-#froststep-gallery::-webkit-scrollbar-thumb {
-    background-color: #a0d8f0;
+#minecraft-gallery::-webkit-scrollbar-thumb {
+    background-color: #61371F;
     border-radius: 4px;
 }
 
-/* Sidebar active link styling */
+
+/* Sidebar active project */
+
 .active-project {
     color: #fff !important;
-    text-shadow: 0 0 10px #a0d8f0;
+    text-shadow: 0 0 10px #61371F;
 }
 
 /* Responsive Layout Adjustments */
@@ -166,7 +183,7 @@
         max-width: none;
     }
 
-    #froststep-gallery {
+    #minecraft-gallery {
         position: static; /* Switch from fixed to static flow so it appears at bottom */
         width: auto;
         max-height: none;
@@ -176,7 +193,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .content, #froststep-gallery {
+    .content, #minecraft-gallery {
         margin-left: 20px;
         margin-right: 20px;
     }
