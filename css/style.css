@@ -41,7 +41,8 @@ animation:scroll-left 25s linear infinite;
 
 .intro_img{
 height:180px;
-margin-right:40px;
+margin-right:0px;
+width: 100%;
 }
 
 @keyframes scroll-left{

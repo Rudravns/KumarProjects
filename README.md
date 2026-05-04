@@ -58,7 +58,6 @@ KumarProjects/
 
 ## 🔗 Connect
 
-*   **GitHub:** Rudravns
 *   **Itch.io:** rudravns
 *   **Replit:** @-THE-CODER-
 
