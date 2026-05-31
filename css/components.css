@@ -12,30 +12,29 @@ color:#eeeeee;
 position:fixed;
 top:0;
 width:100%;
-height: 60px;
+height: 70px;
 background:#000;
-padding:10px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 5%;
+box-sizing: border-box;
 z-index:1000;
 box-shadow:0 4px 20px rgba(0,0,0,0.4);
 }
 
 .nav-logo {
-    position: absolute;
-    top: 50%;
-    left: 40px; /* Same spacing as the right button */
-    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
 }
 
 .nav-logo img {
-    height: 50px; /* Fits nicely within the 80px total height navbar */
+    height: 45px;
     width: auto;
 }
 
 .nav-links{
 display:flex;
-justify-content:center;
-align-items: center;
-height: 100%;
 gap:40px;
 list-style:none;
 margin:0;
@@ -65,7 +64,6 @@ position: relative;
 
 .nav-links a:hover{
 color:white;
-width: 100%;
 }
 
 .nav-links a:hover::after {
@@ -73,10 +71,6 @@ width: 100%;
 }
 
 .nav-projects-link {
-    position: absolute;
-    top: 50%;
-    right: 40px; /* Adjust for spacing from the edge */
-    transform: translateY(-50%);
     text-decoration: none;
     color: #ebdcca;
     font-family: 'Iosevka Charon Mono', monospace;
@@ -244,3 +238,37 @@ opacity:0.7;
 }
 #sidebar .closebtn {position: absolute;top: 0;right: 25px;font-size: 36px;margin-left: 50px;}
 #sidebar h2 {color: #fff;padding-left: 30px;font-family: 'Playfair Display', serif;}
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 850px) {
+    .nav-links {
+        gap: 15px;
+    }
+    .nav-links a {
+        font-size: 15px;
+    }
+    
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .content {
+        padding: 60px 15px;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    #sidebar {
+        width: 100%;
+        right: -100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none; /* Only hide on very small screens */
+    }
+}

@@ -41,8 +41,8 @@ animation:scroll-left 25s linear infinite;
 
 .intro_img{
 height:180px;
-margin-right:40px;
 width: auto;
+display: block;
 }
 
 @keyframes scroll-left{
@@ -85,4 +85,16 @@ width: auto;
 #Featured-Project .card:hover {
     transform: translateY(-5px) scale(1.03);
     box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 40px;
+    }
+    .hero {
+        padding-top: 120px;
+    }
+    .intro_img {
+        height: 100px;
+    }
 }
